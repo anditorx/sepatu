@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Sepatu">
-
+        <activity
+            android:name=".ui.cart.CartActivity"
+            android:exported="false" />
         <activity
             android:name=".SplashScreenActivity"
             android:exported="true">
