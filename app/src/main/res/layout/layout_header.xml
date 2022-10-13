@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="400dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="centerCrop"
+        tools:srcCompat="@drawable/ic_poster_sample"
+
+        />
+
+    <ImageView
+        android:id="@+id/iv_show_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_pink_collection"
+        android:padding="12dp"
+        android:src="@drawable/ic_arrow_forward_white_24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="35dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:text="@string/shop_now"
+        android:textColor="@color/white"
+        app:fontFamily="sans-serif"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_show_now"
+        app:layout_constraintStart_toEndOf="@+id/iv_show_now"
+        app:layout_constraintTop_toTopOf="@+id/iv_show_now" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginBottom="28dp"
+        android:lineSpacingExtra="-15sp"
+        android:text="Sale of the\nSummer\nCollection"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        app:fontFamily="sans-serif-black"
+        app:layout_constraintBottom_toTopOf="@+id/iv_show_now"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
